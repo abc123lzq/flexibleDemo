@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #nm {
+            width: 97vw;
+            height: 100vh;
+            /*插到指定节点需设置相对定位*/
+            margin: 0 auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div id="nm"></div>
+<script>
+    var IframeBOX = new Iframeopt();
+    function Iframeopt() {
+    }
+    Iframeopt.prototype.init = function (dom, iframeId, src) {
+        this.dom = document.getElementById(dom);
+        var iframe = document.createElement("iframe");
+        //设置iframe的属性
+        iframe.setAttribute('id', iframeId);
+        iframe.setAttribute('scrolling', 'no');
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('marginheight', '0');
+        iframe.setAttribute('marginwidth', '0');
+        iframe.src = src;
+        //设置iframe的样式
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.border = 'none';
+        iframe.style.top = '0';
+        iframe.style.left = '0';
+        iframe.style.zIndex = '9';
+        iframe.style.margin = '0';
+        iframe.style.padding = '0';
+        iframe.style.marginLeft = '0';
+        iframe.style.position = 'absolute';
+        iframe.style.overflow = 'hidden';
+        iframe.style.overflowY = 'hidden';
+        this.dom.appendChild(iframe);
+        return iframe;
+    };
+    //调用方法
+    //document.body或者自己定义的节点
+    IframeBOX.init('nm', 'abc', 'https://mdianying.baidu.com/');
+</script>
+</body>
+</html>
