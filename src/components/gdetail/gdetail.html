@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../../assets/js/lib-flexible.js"></script>
+    <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+    <title>游戏详情页</title>
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/comment.css">
+    <link rel="stylesheet" href="gdetail.css">
+</head>
+<body>
+<header class="clear">
+    <div class="left-content left">
+        <a href=""><img src="../../assets/img/new_logo.png"/></a>
+    </div>
+    <div class="right-content right">
+        <a href=""><img src="../../assets/img/search_ico.png"/></a>
+        <a href="../user/user.html"><img src="../../assets/img/user_ico.png"/></a>
+    </div>
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="../home/home.html">首页</a></li>
+        <li><a href="../online/online.html">网游</a></li>
+        <li><a href="../PCG/PCG.html">单机</a></li>
+        <li><a href="../activity/activity.html">活动</a></li>
+        <li><a href="../information/information.html">资讯</a></li>
+        <li><a href="#">礼包</a></li>
+    </ul>
+</nav>
+<div class="main">
+    <div class="gdetail-download clear">
+        <div class="gdetail-download-img">
+            <a href="#"><img src="../../assets/images/online.png"></a>
+        </div>
+        <div class="gdetail-download-intro">
+            <p class="p1">你是《三生三世十里桃花》</p>
+            <p>
+                <img src="../../assets/img/star_1.png">
+                <img src="../../assets/img/star_1.png">
+                <img src="../../assets/img/star_1.png">
+                <img src="../../assets/img/star_1.png">
+                <img src="../../assets/img/star_2.png">
+            </p>
+            <p>微网游，角色类</p>
+            <p>人气：57182</p>
+        </div>
+        <div class="gdetail-download-btn">
+            <a href="#" class="a1">开始游戏</a>
+            <a href="#" class="a2">微端下载</a>
+        </div>
+    </div>
+
+    <div class="gdetail-scroll-box">
+        <div class="gdetail-scroll" id="scrollBox">
+            <ul id="con1">
+                <li><a href="#"> 7724游戏盒 新版上线，找bug送红包啦~点击查看</a><li>
+                <li><a href="#"> 点击查看7724游戏盒 新版上线，找bug送红包啦~</a><li>
+                <li><a href="#"> 7724游戏盒 新版上线，~点击查看找bug送红包啦</a><li>
+                <li><a href="#"> 7724游戏盒 ，找bug送红包啦~点击查看新版上线</a><li>
+            </ul>
+            <ul id="con2"></ul>
+        </div>
+    </div>
+    <div class="gdetail-ad">
+        <img src="../../assets/images/ad-img3.jpg">
+    </div>
+    <div class="online-content gdetail-tab-box">
+        <div class="online-tab gdetail-tab">
+            <ul class="display-flex" id="tabUl">
+                <li onclick="setTab('one',1,2)" id="one1" class="hover">简介<span class="s1"></span></li>
+                <li onclick="setTab('one',2,2)" id="one2">评论<span class="s2"></span></li>
+            </ul>
+        </div>
+        <div class="gdetail-tab-con1" id="con_one_1" style="display:block">
+            <div class="detail_img" id="wrapper">
+                <div id="scroller" class="detail_img_in">
+                    <ul>
+                        <li><img src="../../assets/images/g-img3.jpg"  class="img" /></li>
+                        <li><img src="../../assets/images/g-img3.jpg"  /></li>
+                        <li><img src="../../assets/images/g-img3.jpg"  /></li>
+                        <li><img src="../../assets/images/g-img3.jpg"  /></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gdetail-gintro-box">
+                <div class="gdetail-tit"><h1>游戏说明</h1></div>
+                <div class="gdetail-gintro-p">
+                    <p>正版经典小说《武道至尊》剧情重现，感受暗夜幽殇原著的真正魅力。这是一款东方玄幻与中国武侠元素完美结合的2D仙侠动作RPG。本游戏以通关挑战为游戏基调，通过惊艳的战斗体系、丰富有趣的互动、养成玩法，引导玩家进入一个辉煌庞大的玄幻仙侠世界。 </p>
+                </div>
+            </div>
+            <div class="gdetail-gintro-box">
+                <div class="gdetail-tit gdetail-tit2"><h1>游戏标签</h1></div>
+                <div class="gdetail-gintro-lable">
+                    <a href="#">武侠</a>
+                    <a href="#">挂机</a>
+                    <a href="#">PK</a>
+                </div>
+            </div>
+            <div class="gdetail-gintro-box">
+                <div class="gdetail-tit gdetail-tit3"><h1>礼包发放</h1></div>
+                <div class="online-data">
+                    <ul>
+                        <li>
+                            <div class="left-content ">
+                                <div class="image-content">
+                                    <a href=""><img src="../../assets/images/online.png" alt=""></a>
+                                </div>
+                                <div class="text-content">
+                                    <p>天使奇迹大冒险：特权礼包</p>
+                                    <p><span>剩余</span> <span>71%</span></p>
+                                </div>
+                            </div>
+                            <div class="right-content right">
+                                <button><a href=""><a href="">领取</a></a></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="left-content ">
+                                <div class="image-content">
+                                    <a href=""><img src="../../assets/images/online.png" alt=""></a>
+                                </div>
+                                <div class="text-content">
+                                    <p>天使奇迹大冒险：特权礼包</p>
+                                    <p><span>剩余</span> <span>71%</span></p>
+                                </div>
+                            </div>
+                            <div class="right-content right">
+                                <button><a href=""><a href="">领取</a></a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gdetail-ad">
+                    <a href="#"><img src="../../assets/images/youxihe.jpg"></a>
+                </div>
+            </div>
+            <div class="gdetail-gintro-box">
+                <div class="gdetail-tit"><h1>游戏新闻</h1></div>
+                <div class="gdetail-news">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gdetail-news-more">
+                    <a href="#">浏览更多攻略</a>
+                </div>
+            </div>
+            <div class="gdetail-gintro-box">
+                <div class="gdetail-tit"><h1>游戏攻略</h1></div>
+                <div class="gdetail-news">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>[新闻]</span>
+                                <p>武道至尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更尊4月12日全服停服更新通知</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gdetail-news-more">
+                    <a href="#">浏览更多攻略</a>
+                </div>
+            </div>
+            <div class="gdetail-gintro-box">
+                <div class="gdetail-tit gdetail-tit4"><h1>相关游戏</h1></div>
+                <div class="index-new-game gdetail-gabout">
+                    <ul class="display-flex justify-content-space-around flex-wrap-wrap">
+                        <li>
+                            <a href="#" class="a1">
+                                <img src="../../assets/img/img1.png">
+                                <p>十万个小伙伴</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">
+                                <img src="../../assets/img/img1.png">
+                                <p>数码世界（不付费删测）</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">
+                                <img src="../../assets/img/img1.png">
+                                <p>十万个小伙伴</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">
+                                <img src="../../assets/img/img1.png">
+                                <p>十万个小伙伴</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">
+                                <img src="../../assets/img/img1.png">
+                                <p>十万个小伙伴</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">
+                                <img src="../../assets/img/img1.png">
+                                <p>数码世界（不付费删测）</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">
+                                <img src="../../assets/img/img1.png">
+                                <p>十万个小伙伴</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">
+                                <img src="../../assets/img/img1.png">
+                                <p>十万个小伙伴</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gdetail-gintro-box">
+                <div class="gdetail-tit gdetail-tit5"><h1>最新专题</h1></div>
+                <div class="gdetail-theme">
+                    <ul class="display-flex justify-content-space-between">
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/zhuanti.jpg">
+                                <p>情人节虐狗 啪啪游戏合集</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../assets/images/zhuanti.jpg">
+                                <p>情人节虐狗 啪啪游戏合集</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="gdetail-tab-con2" id="con_one_2" style="display: none;">
+            <div class="gdetail-common-box">
+                <div class="gdetail-click-start">
+                    <span>您对该游戏的评分：</span>
+                    <span class="action_fb_a_img">
+                        <img src="../../assets/img/star_1.png">
+                        <img src="../../assets/img/star_1.png">
+                        <img src="../../assets/img/star_1.png">
+                        <img src="../../assets/img/star_2.png">
+                        <img src="../../assets/img/star_2.png">
+                    </span>
+                </div>
+                <div class="gdetail-common-write  clear">
+                    <textarea maxlength="500" placeholder="我来说两句..." class="area_one"></textarea>
+                    <input class="common-btn" type="button" value="发布">
+                </div>
+                <div class="gdetail-gintro-box">
+                <div class="gdetail-tit gdetail-tit6">
+                    <h1>玩家评论<span>26</span></h1>
+                    <label class="about-me">与我相关</label>
+                </div>
+                <div class="gdetail-common-player">
+                    <ul>
+                        <li>
+                            <p class="p1">
+                                <img src="../../assets/images/online.png">
+                            </p>
+                            <p class="p2">
+                                <span>琵琶网广东省玩家</span>
+                                <em>17小时前</em>
+                                <i>
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_2.png">
+                                    <img src="../../assets/img/star_2.png">
+                                </i>
+                            </p>
+                            <p class="p3">意见反馈 开放平台 联系我们  开放平台 联系我们 开放平台 联系我们游戏合见反馈 开放平台 联系我们  开放平台 联系我们 开放平台 联系我们游戏作</p>
+                            <p class="p4">
+                                <span onclick="p3SpanClick(this)">回复</span>
+                                <em class="action_ding">点赞(<i>1</i>)</em>
+                            </p>
+                            <div class="p5  clear">
+                                <textarea maxlength="500" placeholder="回复： 玩家名" class="area_one area_two"></textarea>
+                                <input class="common-btn" type="button" value="发布">
+                            </div>
+                        </li>
+                        <li>
+                            <p class="p1">
+                                <img src="../../assets/images/online.png">
+                            </p>
+                            <p class="p2">
+                                <span>琵琶网广东省玩家</span>
+                                <em>17小时前</em>
+                                <i>
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_2.png">
+                                    <img src="../../assets/img/star_2.png">
+                                </i>
+                            </p>
+                            <p class="p3">意见反馈</p>
+                            <p class="p4">
+                                <span onclick="p3SpanClick(this)">回复</span>
+                                <em class="action_ding">点赞(<i>1</i>)</em>
+                            </p>
+                            <div class="p5  clear">
+                                <textarea maxlength="500" placeholder="回复： 玩家名" class="area_one area_two"></textarea>
+                                <input class="common-btn" type="button" value="发布">
+                            </div>
+                        </li>
+                        <li>
+                            <p class="p1">
+                                <img src="../../assets/images/online.png">
+                            </p>
+                            <p class="p2">
+                                <span>琵琶网广东省玩家</span>
+                                <em>17小时前</em>
+                                <i>
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_1.png">
+                                    <img src="../../assets/img/star_2.png">
+                                    <img src="../../assets/img/star_2.png">
+                                </i>
+                            </p>
+                            <p class="p3">意见反馈</p>
+                            <p class="p4">
+                                <span onclick="p3SpanClick(this)">回复</span>
+                                <em class="action_ding">点赞(<i>1</i>)</em>
+                            </p>
+                            <div class="p5  clear">
+                                <textarea maxlength="500" placeholder="回复： 玩家名" class="area_one area_two"></textarea>
+                                <input class="common-btn" type="button" value="发布">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gdetail-common-more">
+                    <a href="#">+查看更多</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="someTips">
+    <!--返回顶部-->
+    <div class="back-top" id="rollingTop">返回顶部</div>
+</div>
+<footer>
+    <ul>
+        <li><a href="../home/home.html">首页</a></li>
+        <li><a href="../online/online.html">网游</a></li>
+        <li><a href="../PCG/PCG.html">单机</a></li>
+        <li><a href="../activity/activity.html">活动</a></li>
+        <li><a href="../information/information.html">资讯</a></li>
+        <li ><a href="../OEM/OEM.html">礼包</a></li>
+    </ul>
+    <div class="footer-text">
+        <p>你好，<a href="" class="footer-a1">周杰伦</a></p>
+        <p><a href="" class="footer-a1"> 意见反馈</a> 开放平台 联系我们 <a href="" class="footer-a2">游戏合作</a></p>
+        <p>厦门七七游网络科技有限公司</p>
+        <p class="imgSize">
+            闽ICP备15008081号-2
+            <a target="_blank"
+               href="http://shang.qq.com/wpa/qunwpa?idkey=921c2f99c1381082f24b42be36117a7978614ab766fcd691139c64c791d439d5"><img
+                    border="0" src="http://pub.idqqimg.com/wpa/images/group.png"
+                    alt="7724游戏交流群" title="7724游戏交流群"></a>
+        </p>
+        <p id="changeImage"><a key="58180ca2efbfb050303b4651" logo_size="124x47" logo_type="realname"
+                               href="http://www.anquan.org">
+            <script src="//static.anquan.org/static/outer/js/aq_auth.js"></script>
+        </a></p>
+    </div>
+</footer>
+<script src="../../assets/js/jquery-3.2.0.min.js"></script>
+<script src="gdetail.js"></script>
+<script src="../../assets/js/comment.js"></script>
+<script src="iscroll.js"></script>
+</body>
+</html>
